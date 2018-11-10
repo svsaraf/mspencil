@@ -1,0 +1,18 @@
+{% extends 'registration/base.html' %}
+
+{% block titleblock %}
+Welcome to MsPencil!
+{% endblock %}
+
+{% block bodyblock %}
+<div class="main">
+Welcome to the site where buying teaching supplies is easy. Linked up to Amazon.
+<div style="float: right;">
+{% if user.is_authenticated %}
+Hello {{ user.username }}!&nbsp;&nbsp;&nbsp;<a href="/logout">Logout</a>
+{% else %}
+<a href="/login">Login</a>&nbsp;&nbsp;&nbsp;<a href="/register">Register</a>
+{% endif %}
+</div>
+</div>
+{% endblock %}
