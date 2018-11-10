@@ -25,7 +25,7 @@ SECRET_KEY = 'd0!44*k(m0br7p^0yht=avzn0^q1&5qnll6r=mx!ry75#4d9&@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u'www.mspencil.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
