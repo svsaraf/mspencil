@@ -1,11 +1,125 @@
 {% extends 'registration/base.html' %}
+{% load static %}
 
 {% block titleblock %}
-Welcome to MsPencil!
+MsPencil
 {% endblock %}
 
 {% block bodyblock %}
 <div class="main">
-    <div class="title">Welcome to MsPencil!</div>
+    <div class="header">
+        <div class="leftheader">
+            <a href="/">MsPencil</a>
+        </div>
+        <div class="rightheader">
+            <a href="/register">Register</a>
+            <a href="/login">Login</a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="gradeselector">
+            <div class="listy">
+                <div class="grade"><input type="checkbox" name="prek">Pre-K</div>
+                <div class="grade"><input type="checkbox" name="1st">1st grade</div>
+                <div class="grade"><input type="checkbox" name="2nd">2nd grade</div>
+                <div class="grade"><input type="checkbox" name="3rd">3rd grade</div>
+                <div class="grade"><input type="checkbox" name="4th">4th grade</div>
+                <div class="grade"><input type="checkbox" name="5th">5th grade</div>
+                <div class="grade"><input type="checkbox" name="6th">6th grade</div>
+            </div>
+            <div class="listy">
+                <div class="grade"><input type="checkbox" name="7th">7th grade</div>
+                <div class="grade"><input type="checkbox" name="8th">8th grade</div>
+                <div class="grade"><input type="checkbox" name="9th">9th grade</div>
+                <div class="grade"><input type="checkbox" name="9th">10th grade</div>
+                <div class="grade"><input type="checkbox" name="9th">11th grade</div>
+                <div class="grade"><input type="checkbox" name="9th">12th grade</div>
+            </div>
+        </div>
+
+        <div class="themeselector">
+            <div class="theme"><input type="checkbox" name="halloween">Halloween</div>
+            <div class="theme"><input type="checkbox" name="veterans">Veteran's Day</div>
+            <div class="theme"><input type="checkbox" name="thanksgiving">Thanksgiving</div>
+            <div class="theme"><input type="checkbox" name="hannukah">Hannukah</div>
+            <div class="theme"><input type="checkbox" name="christmas">Christmas</div>
+            <div class="theme"><input type="checkbox" name="newyears">New Years</div>
+            <div class="theme"><input type="checkbox" name="valentines">Valentine's Day</div>
+        </div>
+
+        <div class="typeselector">
+            <div class="type"><input type="checkbox" name="schoolsupplies">School Supplies</div>
+            <div class="type"><input type="checkbox" name="decorations">Decorations</div>
+            <div class="type"><input type="checkbox" name="thanksgiving">Activities / Games</div>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="product">
+            <div class="descriptionbox">
+                Product description alsdkjf;la
+            </div>
+            <img src="{% static "img/exampleimage.png" %}" alt="placeholder" style="width:150px;height:150px;">
+        </div>
+                <div class="product">
+            <div class="descriptionbox">
+                Product description alsdkjf;la
+            </div>
+            <img src="{% static "img/exampleimage.png" %}" alt="placeholder" style="width:150px;height:150px;">
+        </div>
+                <div class="product">
+            <div class="descriptionbox">
+                Product description alsdkjf;la
+            </div>
+            <img src="{% static "img/exampleimage.png" %}" alt="placeholder" style="width:150px;height:150px;">
+        </div>
+                <div class="product">
+            <div class="descriptionbox">
+                Product description alsdkjf;la
+            </div>
+            <img src="{% static "img/exampleimage.png" %}" alt="placeholder" style="width:150px;height:150px;">
+        </div>
+                <div class="product">
+            <div class="descriptionbox">
+                Product description alsdkjf;la
+            </div>
+            <img src="{% static "img/exampleimage.png" %}" alt="placeholder" style="width:150px;height:150px;">
+        </div>
+                <div class="product">
+            <div class="descriptionbox">
+                Product description alsdkjf;la
+            </div>
+            <img src="{% static "img/exampleimage.png" %}" alt="placeholder" style="width:150px;height:150px;">
+        </div>
+                <div class="product">
+            <div class="descriptionbox">
+                Product description alsdkjf;la
+            </div>
+            <img src="{% static "img/exampleimage.png" %}" alt="placeholder" style="width:150px;height:150px;">
+        </div>
+                <div class="product">
+            <div class="descriptionbox">
+                Product description alsdkjf;la
+            </div>
+            <img src="{% static "img/exampleimage.png" %}" alt="placeholder" style="width:150px;height:150px;">
+        </div>
+                <div class="product">
+            <div class="descriptionbox">
+                Product description alsdkjf;la
+            </div>
+            <img src="{% static "img/exampleimage.png" %}" alt="placeholder" style="width:150px;height:150px;">
+        </div>
+                <div class="product">
+            <div class="descriptionbox">
+                Product description alsdkjf;la
+            </div>
+            <img src="{% static "img/exampleimage.png" %}" alt="placeholder" style="width:150px;height:150px;">
+        </div>
+                <div class="product">
+            <div class="descriptionbox">
+                Product description alsdkjf;la
+            </div>
+            <img src="{% static "img/exampleimage.png" %}" alt="placeholder" style="width:150px;height:150px;">
+        </div>
+    </div>
 </div>
 {% endblock %}
